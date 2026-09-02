@@ -1,0 +1,143 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Signature citation accent — amber means "traceable to a real source" */
+  --color-citation: var(--citation);
+  --color-citation-foreground: var(--citation-foreground);
+  --color-citation-soft: var(--citation-soft);
+  --color-citation-line: var(--citation-line);
+
+  /* Muted status accents — used sparingly, never competing with amber */
+  --color-decision: var(--status-decision);
+  --color-action: var(--status-action);
+  --color-blocker: var(--status-blocker);
+
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-jb), ui-monospace, monospace;
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+}
+
+/* LIGHT — clean crisp mode */
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #0f172a;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #e2e8f0;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #5b52e8;
+
+  --citation: #5b52e8;
+  --citation-foreground: #ffffff;
+  --citation-soft: rgba(91, 82, 232, 0.1);
+  --citation-line: rgba(91, 82, 232, 0.45);
+
+  --status-decision: #1d4ed8;
+  --status-action: #b45309;
+  --status-blocker: #b91c1c;
+  --status-open: #047857;
+  --status-resolved: #6d28d9;
+  --status-stale: #475569;
+
+  --radius: 0.4rem;
+}
+
+/* DARK — ink mode (default for this dev-tool audience) */
+.dark {
+  color-scheme: dark;
+  --background: #0e0f11;
+  --foreground: #edece8;
+  --card: #141518;
+  --card-foreground: #edece8;
+  --popover: #16171a;
+  --popover-foreground: #edece8;
+  --primary: #edece8;
+  --primary-foreground: #0e0f11;
+  --secondary: #1c1d21;
+  --secondary-foreground: #edece8;
+  --muted: #1c1d21;
+  --muted-foreground: #8a8a80;
+  --accent: #1c1d21;
+  --accent-foreground: #edece8;
+  --destructive: #d1594a;
+  --border: #26272c;
+  --input: #26272c;
+  --ring: #7c74ed;
+
+  --citation: #7c74ed;
+  --citation-foreground: #0e0f11;
+  --citation-soft: rgba(124, 116, 237, 0.12);
+  --citation-line: rgba(124, 116, 237, 0.5);
+
+  --status-decision: #60a5fa;
+  --status-action: #fbbf24;
+  --status-blocker: #f87171;
+  --status-open: #34d399;
+  --status-resolved: #a78bfa;
+  --status-stale: #94a3b8;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'ss01', 'cv01', 'cv03';
+  }
+
+  ::selection {
+    background: var(--citation-soft);
+  }
+}
+
+/* Fine hairline utility for the archival, record-like separators */
+@layer utilities {
+  .hairline {
+    border-color: var(--border);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
