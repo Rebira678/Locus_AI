@@ -18,7 +18,7 @@ export default function DashboardPage() {
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
             Good morning, Priya
           </p>
-          <h1 className="mt-1 text-2xl font-medium tracking-tight text-foreground text-balance">
+          <h1 className="mt-1 text-[1.8rem] font-semibold tracking-[-0.02em] text-foreground text-balance">
             What does the team already know?
           </h1>
         </header>

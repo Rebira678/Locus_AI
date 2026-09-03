@@ -15,8 +15,8 @@ export default function SourcesPage() {
       <main className="mx-auto w-full max-w-[1000px] flex-1 px-4 py-8 md:px-8 md:py-12">
         <header className="mb-10 flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h1 className="text-3xl font-semibold tracking-tight text-foreground">
-              Integrations
+            <h1 className="text-[1.8rem] font-semibold tracking-[-0.02em] text-foreground text-balance">
+              Sources
             </h1>
             <p className="mt-2 text-[15px] text-muted-foreground">
               Manage data streams and authentication for your workspace.

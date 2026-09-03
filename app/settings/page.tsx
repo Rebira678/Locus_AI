@@ -19,7 +19,7 @@ export default function SettingsPage() {
     <AppShell>
       <main className="mx-auto w-full max-w-[1000px] flex-1 px-4 py-8 md:px-8 md:py-12 relative pb-32">
         <header className="mb-12">
-          <h1 className="text-3xl font-semibold tracking-tight text-foreground">
+          <h1 className="text-[1.8rem] font-semibold tracking-[-0.02em] text-foreground text-balance">
             Settings
           </h1>
         </header>

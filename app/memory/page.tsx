@@ -15,10 +15,10 @@ export default function MemoryPage() {
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
             Meridian · Team memory
           </p>
-          <h1 className="mt-1 text-2xl font-medium tracking-tight text-foreground text-balance">
+          <h1 className="mt-1 text-[1.8rem] font-semibold tracking-[-0.02em] text-foreground text-balance">
             Memory Explorer
           </h1>
-          <p className="mt-1.5 max-w-xl text-[14px] leading-relaxed text-muted-foreground">
+          <p className="mt-2 max-w-xl text-[16px] leading-relaxed text-muted-foreground">
             Every decision, action item, and blocker captured across your tools. Filter, search, and
             open any item to see the exact source it came from.
           </p>

@@ -116,7 +116,7 @@ export function MemoryDrawer({
                   <TypeTag type={item.type} />
                   <StatusTag status={item.status} />
                 </div>
-                <h2 className="text-[17px] font-medium leading-snug tracking-tight text-foreground text-balance">
+                <h2 className="text-[1.3rem] font-semibold leading-tight tracking-[-0.02em] text-foreground text-balance">
                   {item.title}
                 </h2>
               </div>
