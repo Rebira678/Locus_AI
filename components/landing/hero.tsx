@@ -30,10 +30,10 @@ export function Hero() {
               message, ticket, or doc where the decision was actually made.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <Link
                 href="/dashboard"
-                className={cn(buttonVariants({ size: 'lg' }), 'group h-10 px-4 text-[14px]')}
+                className={cn(buttonVariants({ size: 'lg' }), 'group h-10 px-4 text-[14px] w-full sm:w-auto')}
               >
                 Connect your tools
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
@@ -42,7 +42,7 @@ export function Hero() {
                 href="#citations"
                 className={cn(
                   buttonVariants({ variant: 'outline', size: 'lg' }),
-                  'h-10 px-4 text-[14px]',
+                  'h-10 px-4 text-[14px] w-full sm:w-auto',
                 )}
               >
                 See a cited answer

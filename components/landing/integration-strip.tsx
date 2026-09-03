@@ -52,7 +52,7 @@ export function IntegrationStrip() {
 
       {/* Marquee Tracks with soft linear mask */}
       <div 
-        className="relative mx-auto flex max-w-[1500px] flex-col gap-5 overflow-hidden"
+        className="relative mx-auto flex w-full max-w-[1500px] flex-col gap-5 overflow-hidden"
         style={{
           maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)',
           WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)'

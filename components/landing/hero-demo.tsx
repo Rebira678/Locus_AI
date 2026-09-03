@@ -140,7 +140,7 @@ export function HeroDemo() {
             type="button"
             onClick={() => setAnswerIdx(i)}
             className={cn(
-              'rounded-full border px-2.5 py-1 text-left text-[11.5px] transition-colors',
+              'rounded-full border px-2.5 py-1 text-left text-[11.5px] transition-colors max-w-full text-wrap',
               i === answerIdx
                 ? 'border-citation/40 bg-citation-soft text-foreground'
                 : 'border-border text-muted-foreground hover:border-border hover:bg-muted hover:text-foreground',

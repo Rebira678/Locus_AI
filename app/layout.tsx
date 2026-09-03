@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark ${roboto.variable} ${mono.variable}`}>
-      <body className="antialiased bg-background text-foreground font-sans">
+      <body className="antialiased bg-background text-foreground font-sans overflow-x-hidden">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

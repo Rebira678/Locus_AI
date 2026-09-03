@@ -221,7 +221,7 @@ export function HowItWorks() {
         </div>
 
         <div className="flex flex-col gap-10 md:gap-14">
-          <div className="flex justify-start overflow-x-auto pb-4 sm:justify-center md:pb-0">
+          <div className="flex justify-start overflow-x-auto pb-4 sm:justify-center md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             <div className="inline-flex min-w-max items-center gap-2 rounded-full border border-white/5 bg-background/50 p-1.5 shadow-[0_4px_24px_rgba(0,0,0,0.1)] backdrop-blur-xl">
               {steps.map((step, i) => (
                 <button
