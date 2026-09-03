@@ -32,8 +32,8 @@ function FeedRow({ item, isNew }: { item: FeedItem; isNew?: boolean }) {
       <div className="mx-2 mb-1 flex items-center gap-3 rounded-xl px-4 py-2.5 transition-colors hover:bg-muted/50">
         <SourceBadge id={item.source} size="md" />
         <div className="min-w-0 flex-1">
-          <p className="truncate text-[13.5px] text-card-foreground">{item.title}</p>
-          <div className="mt-1 flex items-center gap-2.5">
+          <p className="truncate text-[14.5px] font-medium text-foreground">{item.title}</p>
+          <div className="mt-1.5 flex items-center gap-2.5">
             <TypeTag type={item.type} />
             <span className="font-mono text-[10px] text-muted-foreground">{item.label}</span>
           </div>

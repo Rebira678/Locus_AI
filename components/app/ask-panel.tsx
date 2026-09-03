@@ -109,8 +109,8 @@ export function AskPanel() {
               exit={{ opacity: 0 }}
               className="max-w-md"
             >
-              <p className="text-[14px] text-foreground">No cited memory matched that yet.</p>
-              <p className="mt-1.5 text-[13px] leading-relaxed text-muted-foreground">
+              <p className="text-[16px] font-medium text-foreground">No cited memory matched that yet.</p>
+              <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
                 Locus only answers when it can point to a real source. Try a question about{' '}
                 <button
                   className="text-citation underline-offset-2 hover:underline"

@@ -21,7 +21,7 @@ export function CitedAnswerBody({
 
   return (
     <div className={className}>
-      <p className={cn('text-pretty text-[15px] leading-[1.75] text-card-foreground')}>
+      <p className="text-pretty text-[16px] leading-relaxed text-foreground">
         {answer.segments.map((seg, i) => {
           if (!seg.citationId) return <span key={i}>{seg.text}</span>
           const citation = answer.citations.find((c) => c.id === seg.citationId)!
