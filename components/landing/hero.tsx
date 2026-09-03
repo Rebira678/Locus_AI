@@ -20,8 +20,8 @@ export function Hero() {
               </span>
             </div>
 
-            <h1 className="text-balance text-[2.6rem] font-semibold leading-[1.02] tracking-[-0.02em] text-foreground sm:text-[3.2rem] lg:text-[3.6rem]">
-              Didn’t we already <span className="bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">decide this</span> three weeks ago?
+            <h1 className="text-balance text-[2.1rem] font-semibold leading-[1.02] tracking-[-0.02em] text-foreground sm:text-[3.2rem] lg:text-[3.6rem]">
+              Didn’t we already <span className="inline-block bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">decide this</span> three weeks ago?
             </h1>
 
             <p className="mt-6 text-pretty text-[16px] leading-relaxed text-muted-foreground">
