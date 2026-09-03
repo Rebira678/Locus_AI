@@ -2,11 +2,12 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, Library, Plug, Settings } from 'lucide-react'
+import { LayoutDashboard, Library, Plug, Settings, Menu, X } from 'lucide-react'
 import { Logo } from '@/components/logo'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Avatar } from '@/components/primitives'
 import { cn } from '@/lib/utils'
+import { useState } from 'react'
 
 const nav = [
   { label: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
@@ -15,6 +16,7 @@ const nav = [
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <div className="flex min-h-svh bg-background">
@@ -90,26 +92,65 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <Logo />
           <div className="ml-auto flex items-center gap-2">
             <ThemeToggle />
-            <Link
-              href="/dashboard"
-              className={cn(
-                'rounded-md px-2 py-1 text-[13px]',
-                pathname === '/dashboard' ? 'bg-muted text-foreground' : 'text-muted-foreground',
-              )}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="flex size-9 items-center justify-center rounded-md border border-border bg-card text-foreground"
             >
-              Dashboard
-            </Link>
-            <Link
-              href="/memory"
-              className={cn(
-                'rounded-md px-2 py-1 text-[13px]',
-                pathname === '/memory' ? 'bg-muted text-foreground' : 'text-muted-foreground',
-              )}
-            >
-              Memory
-            </Link>
+              {mobileMenuOpen ? <X className="size-4" /> : <Menu className="size-4" />}
+            </button>
           </div>
         </header>
+
+        {/* mobile menu overlay */}
+        {mobileMenuOpen && (
+          <div className="fixed inset-0 top-14 z-20 flex flex-col bg-background px-4 py-4 md:hidden">
+            <nav className="flex flex-col gap-2">
+              <Link
+                href="/dashboard"
+                onClick={() => setMobileMenuOpen(false)}
+                className={cn('flex items-center gap-3 rounded-md px-3 py-2.5 text-[14px]', pathname === '/dashboard' ? 'bg-muted font-medium text-foreground' : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground')}
+              >
+                <LayoutDashboard className="size-4" /> Dashboard
+              </Link>
+              <Link
+                href="/memory"
+                onClick={() => setMobileMenuOpen(false)}
+                className={cn('flex items-center gap-3 rounded-md px-3 py-2.5 text-[14px]', pathname === '/memory' ? 'bg-muted font-medium text-foreground' : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground')}
+              >
+                <Library className="size-4" /> Memory
+              </Link>
+              <div className="my-2 h-px bg-border" />
+              <Link
+                href="/sources"
+                onClick={() => setMobileMenuOpen(false)}
+                className={cn('flex items-center justify-between rounded-md px-3 py-2.5 text-[14px]', pathname === '/sources' ? 'bg-muted font-medium text-foreground' : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground')}
+              >
+                <div className="flex items-center gap-3">
+                  <Plug className="size-4" /> Sources
+                </div>
+                <div className="flex items-center justify-center rounded-full bg-[var(--status-blocker)]/15 px-1.5 py-0.5 text-[9px] font-bold text-[var(--status-blocker)]">
+                  1 ISSUE
+                </div>
+              </Link>
+              <Link
+                href="/settings"
+                onClick={() => setMobileMenuOpen(false)}
+                className={cn('flex items-center gap-3 rounded-md px-3 py-2.5 text-[14px]', pathname === '/settings' ? 'bg-muted font-medium text-foreground' : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground')}
+              >
+                <Settings className="size-4" /> Settings
+              </Link>
+            </nav>
+            <div className="mt-auto border-t border-border pt-4">
+              <div className="flex items-center gap-3 px-2">
+                <Avatar initials="PN" name="Priya Nair" />
+                <span className="flex flex-col">
+                  <span className="text-[13px] font-medium text-foreground">Priya Nair</span>
+                  <span className="font-mono text-[11px] text-muted-foreground">priya@meridian.dev</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* desktop header actions */}
         <div className="hidden items-center gap-2 border-b border-border px-6 py-2.5 md:flex">
