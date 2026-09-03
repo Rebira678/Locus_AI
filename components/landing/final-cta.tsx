@@ -12,8 +12,8 @@ export function FinalCta() {
       
       <div className="relative mx-auto max-w-[1200px] px-5 md:px-8">
         <div className="mx-auto flex max-w-4xl flex-col items-center overflow-hidden rounded-[2rem] border border-white/10 bg-card/40 px-6 py-16 text-center shadow-[0_8px_40px_rgba(0,0,0,0.12)] backdrop-blur-xl sm:px-12 sm:py-24">
-          <h2 className="text-balance text-[2.2rem] font-semibold leading-[1.1] tracking-[-0.02em] text-foreground sm:text-[3.2rem]">
-            Stop asking “didn’t we <span className="bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">decide this already?</span>”
+          <h2 className="mb-6 text-balance text-[1.8rem] font-semibold leading-[1.1] tracking-[-0.02em] text-foreground sm:text-[2.8rem]">
+            Stop asking “didn’t we <span className="inline-block bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">decide this already?</span>”
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-[1.1rem] leading-relaxed text-muted-foreground">
             Connect your first tool in under two minutes. Locus starts building your team’s cited memory from the conversations you’ve already had. No manual data entry required.

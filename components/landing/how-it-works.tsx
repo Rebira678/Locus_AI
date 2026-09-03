@@ -212,8 +212,8 @@ export function HowItWorks() {
           <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
             How it works
           </p>
-          <h2 className="mt-4 text-balance text-[2rem] font-semibold leading-tight tracking-[-0.02em] text-foreground sm:text-[2.6rem]">
-            See how Locus AI turns your team's activity into <span className="bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">shared memory.</span>
+          <h2 className="mt-4 text-balance text-[1.8rem] font-semibold leading-tight tracking-[-0.02em] text-foreground sm:text-[2.6rem]">
+            See how Locus AI turns your team's activity into <span className="inline-block bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">shared memory.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-[1.1rem] leading-relaxed text-muted-foreground">
             Locus AI connects to Slack, Notion, and your other tools, continuously building organizational memory, surfacing context, and giving your whole team a searchable understanding of what the organization already knows.

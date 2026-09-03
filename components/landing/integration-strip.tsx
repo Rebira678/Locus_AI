@@ -38,9 +38,9 @@ export function IntegrationStrip() {
           Native Integrations
         </div>
         
-        <h2 className="text-balance text-[2.2rem] font-semibold leading-[1.15] tracking-tight text-foreground sm:text-[3rem]">
+        <h2 className="text-balance text-[1.9rem] font-semibold leading-[1.15] tracking-tight text-foreground sm:text-[3rem]">
           Your entire stack, <br className="hidden sm:block" />
-          <span className="bg-gradient-to-r from-citation to-blue-500 bg-clip-text text-transparent">
+          <span className="inline-block bg-gradient-to-r from-citation to-blue-500 bg-clip-text text-transparent">
             instantly unified.
           </span>
         </h2>

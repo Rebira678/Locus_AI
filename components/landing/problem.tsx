@@ -40,8 +40,8 @@ export function Problem() {
             <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
               The problem
             </p>
-            <h2 className="mt-4 text-balance text-[1.9rem] font-semibold leading-tight tracking-[-0.02em] text-foreground sm:text-[2.3rem]">
-              Decisions get made in the flow of work — and <span className="bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">quietly lost.</span>
+            <h2 className="text-balance text-[1.8rem] font-semibold leading-[1.1] tracking-[-0.02em] text-foreground sm:text-[2.6rem] lg:text-[2.8rem]">
+              Decisions get made in the flow of work — and <span className="inline-block bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">quietly lost.</span>
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
               The institutional memory of a startup doesn’t live in a wiki. It lives in a Slack

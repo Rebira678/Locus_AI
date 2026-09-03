@@ -17,8 +17,8 @@ export function CitationDeepDive() {
             <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
               Why citations matter
             </p>
-            <h2 className="mt-4 text-balance text-[1.9rem] font-semibold leading-tight tracking-[-0.02em] text-foreground sm:text-[2.3rem]">
-              An answer you can’t verify is <span className="bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">just a rumor.</span>
+            <h2 className="text-balance text-[1.8rem] font-semibold leading-[1.1] tracking-[-0.02em] text-foreground sm:text-[2.6rem] lg:text-[2.8rem]">
+              An answer you can’t verify is <span className="inline-block bg-gradient-to-r from-citation to-citation/70 bg-clip-text text-transparent">just a rumor.</span>
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
               Everything in indigo traces back to something real. Click any citation to read the
