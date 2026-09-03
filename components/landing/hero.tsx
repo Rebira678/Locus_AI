@@ -10,7 +10,7 @@ export function Hero() {
       <div className="mx-auto max-w-[1200px] px-5 pb-16 pt-16 md:px-8 md:pb-24 md:pt-24">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-16">
           {/* copy */}
-          <div className="max-w-xl">
+          <div className="max-w-xl min-w-0">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-muted/30 py-1 pl-1.5 pr-3">
               <span className="rounded-full bg-citation-soft px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-citation">
                 cited
@@ -55,7 +55,7 @@ export function Hero() {
           </div>
 
           {/* demo widget */}
-          <div className="lg:pl-4">
+          <div className="lg:pl-4 min-w-0">
             <HeroDemo />
           </div>
         </div>

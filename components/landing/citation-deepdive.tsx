@@ -13,7 +13,7 @@ export function CitationDeepDive() {
     <section id="citations" className="border-b border-border">
       <div className="mx-auto max-w-[1200px] px-5 py-16 md:px-8 md:py-24">
         <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
-          <div className="lg:sticky lg:top-24 lg:self-start">
+          <div className="min-w-0 lg:sticky lg:top-24 lg:self-start">
             <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
               Why citations matter
             </p>
@@ -35,7 +35,7 @@ export function CitationDeepDive() {
             </div>
           </div>
 
-          <div className="space-y-5">
+          <div className="min-w-0 space-y-5">
             {/* the cited answer */}
             <div className="rounded-xl border border-border bg-card p-5 md:p-6">
               <div className="mb-4 flex items-center gap-2 border-b border-border pb-3">

@@ -36,7 +36,7 @@ export function Problem() {
     <section className="border-b border-border">
       <div className="mx-auto max-w-[1200px] px-5 py-16 md:px-8 md:py-24">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-          <div className="lg:sticky lg:top-24 lg:self-start">
+          <div className="min-w-0 lg:sticky lg:top-24 lg:self-start">
             <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
               The problem
             </p>
@@ -51,7 +51,7 @@ export function Problem() {
             </p>
           </div>
 
-          <ol className="relative">
+          <ol className="relative min-w-0">
             <span
               aria-hidden
               className="absolute bottom-3 left-[7px] top-3 w-px bg-border"
